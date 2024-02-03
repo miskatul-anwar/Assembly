@@ -1,0 +1,3 @@
+%line 1+1 ari.asm
+mov rax, 100
+mov eax, 100
