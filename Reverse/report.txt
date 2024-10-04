@@ -1,0 +1,13 @@
+     1	main>:
+     2	    1119:	55                   	push   rbp
+     3	    111a:	48 89 e5             	mov    rbp,rsp
+     4	    111d:	b8 00 00 00 00       	mov    eax,0x0
+     5	    1122:	5d                   	pop    rbp
+     6	    1123:	c3                   	ret
+----------------------------
+     1	main>:
+     2	    116d:	55                   	push   ebp
+     3	    116e:	89 e5                	mov    ebp,esp
+     4	    1170:	e8 0c 00 00 00       	call   1181 <__x86.get_pc_thunk.ax>
+     5	    1175:	05 7f 2e 00 00       	add    eax,0x2e7f
+     6	    117a:	b8 00 00 00 00       	mov    eax,0x0
