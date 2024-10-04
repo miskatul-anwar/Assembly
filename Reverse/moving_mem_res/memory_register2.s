@@ -1,15 +1,14 @@
 .section .data
   var1:
-    .int 10           
+    .int 10
 
 .section .bss
-.lcomm var2, 4        
+  .lcomm var2, 4
 
 .section .text
   .globl _start
+
 _start:
-  nop 
-mov_data:
   movl var1, %ecx      # Load the value of 'var1' into %ecx
   movl $var2, %ebx     # Load the address of 'var2' into %ebx
   movl %ecx, (%ebx)    # Store the value of %ecx into the address of 'var2'
